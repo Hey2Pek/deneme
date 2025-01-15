@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/DENEME/static/css/main.06aa5b3a.css",
-    "main.js": "/DENEME/static/js/main.b177df7f.js",
+    "main.js": "/DENEME/static/js/main.9e994de0.js",
     "static/js/453.a7d57358.chunk.js": "/DENEME/static/js/453.a7d57358.chunk.js",
     "index.html": "/DENEME/index.html",
     "main.06aa5b3a.css.map": "/DENEME/static/css/main.06aa5b3a.css.map",
-    "main.b177df7f.js.map": "/DENEME/static/js/main.b177df7f.js.map",
+    "main.9e994de0.js.map": "/DENEME/static/js/main.9e994de0.js.map",
     "453.a7d57358.chunk.js.map": "/DENEME/static/js/453.a7d57358.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.06aa5b3a.css",
-    "static/js/main.b177df7f.js"
+    "static/js/main.9e994de0.js"
   ]
 }
