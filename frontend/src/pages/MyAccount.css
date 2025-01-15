@@ -1,0 +1,429 @@
+/* Genel container */
+.my-account-container {
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem;
+    background-color: #ffffff; /* Beyaz arka plan */
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 2rem auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .my-account-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Profil başlığı */
+  .profile-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-header h2 {
+    font-size: 1.8rem;
+    color: #008037; /* Koyu yeşil */
+    margin: 0.5rem 0;
+  }
+  
+  .profile-header p {
+    color: #666;
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .edit-button {
+    background-color: #008037; /* Yeşil */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.6rem 1.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-button:hover {
+    background-color: #005f27; /* Daha koyu yeşil */
+  }
+  
+  /* Profil detayları */
+  .profile-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .details-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="date"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="date"]:focus {
+    border-color: #008037; /* Yeşil */
+    box-shadow: 0 0 4px rgba(0, 128, 55, 0.3); /* Yeşil gölge */
+  }
+  
+  /* Gender butonları */
+  .gender-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .gender-buttons button {
+    flex: 1;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .gender-buttons button.active {
+    background-color: #008037; /* Yeşil */
+    color: white;
+    border-color: #008037;
+  }
+  
+  .gender-buttons button:disabled {
+    background-color: #e9e9e9;
+    color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  /* Save ve Cancel butonları */
+  .save-button {
+    background-color: #008037; /* Yeşil */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    grid-column: span 2;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .save-button:hover {
+    background-color: #005f27; /* Daha koyu yeşil */
+  }
+  
+  .save-button:disabled {
+    background-color: #e9e9e9;
+    color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .profile-details {
+      grid-template-columns: 1fr;
+    }
+  }
+  .accommodations-list {
+    margin-top: 20px;
+  }
+  
+  .accommodation-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .accommodation-card h4 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .accommodation-card p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #666;
+  }
+  .accommodations-section {
+    margin-top: 40px;
+  }
+  
+  .accommodations-section h3 {
+    margin-bottom: 20px;
+  }
+  
+  .accommodations-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .accommodation-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .accommodation-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .accommodation-details {
+    padding: 15px;
+  }
+  
+  .accommodation-details h4 {
+    margin-bottom: 10px;
+  }
+  
+  .accommodation-details p {
+    margin: 5px 0;
+  }
+  
+  .accommodation-details button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .accommodation-details button:hover {
+    background-color: #45a049;
+  }
+  .bookings-section {
+    margin-top: 20px;
+  }
+  
+  .bookings-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .booking-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .booking-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .booking-header h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .booking-header .status {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    text-transform: capitalize;
+  }
+  
+  .status.pending {
+    background: #fffae5;
+    color: #b59f0f;
+  }
+  
+  .status.confirmed {
+    background: #e5ffec;
+    color: #22a047;
+  }
+  
+  .status.cancelled {
+    background: #ffe5e5;
+    color: #c02424;
+  }
+  
+  .booking-details p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .booking-details strong {
+    color: #333;
+  }
+  .details-button,
+.delete-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.details-button {
+  background-color: #008037;
+  color: white;
+}
+
+.details-button:hover {
+  background-color: #0f553b;
+}
+  .delete-button {
+    background-color: #093a12;
+    color: white;
+  }
+  
+
+.delete-button:hover {
+  background-color: #8f0b18;
+}
+
+.delete-button:focus,
+.details-button:focus {
+  outline: none;
+}
+
+.cancel-button {
+  background-color: #ffc107;
+  color: #333;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+  background-color: #e0a800;
+}
+
+.cancel-button:focus {
+  outline: none;
+}
+.host-bookings-section {
+  margin-top: 20px;
+}
+
+.bookings-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.booking-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.booking-header h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.booking-header .status {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  background: #fffae5;
+  color: #b59f0f;
+}
+
+.status.confirmed {
+  background: #e5ffec;
+  color: #22a047;
+}
+
+.status.cancelled {
+  background: #ffe5e5;
+  color: #c02424;
+}
+
+.booking-details p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.booking-details strong {
+  color: #333;
+}
+
+.confirm-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.reject-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.confirm-button:hover {
+  background-color: #45a049;
+}
+
+.reject-button:hover {
+  background-color: #e53935;
+}
+.status.rejected {
+  background: #ffe5e5;
+  color: #c02424;
+}
