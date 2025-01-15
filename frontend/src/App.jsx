@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Routes, Route, useNavigationType, useLocation, Navigate } from "react-router-dom";
+import {  HashRouter as Router, Routes, Route, useNavigationType, useLocation, Navigate } from "react-router-dom";
 import Karmaacom from "./pages/Karmaacom";
 import SearchForm from "./pages/SearchForm";
 import AccommodationDetails from "./pages/AccommodationDetails";
@@ -89,7 +89,8 @@ function App() {
   }, [pathname]);
 
   return (
-    <Routes>
+    <Router>
+      <switch>
       <Route path="/" element={<Karmaacom />} />
       <Route path="/search" element={<SearchForm />} />
       <Route path="/accommodation/:id" element={<AccommodationDetails />} />
@@ -104,7 +105,8 @@ function App() {
       <Route path="/edit-accommodation/:id" element={<EditAccommodation />} />
       <Route path="/myaccount/addaccommodations" element={<AddAccommodation />} />
       <Route path="/user/:userId" element={<UserProfile />} />
-    </Routes>
+      </switch>
+    </Router>
   );
 }
 

@@ -3,19 +3,11 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const accommodationsRoutes = require("./routes/accommodations"); // Routes for accommodations
-const mongoose = require("mongoose"); // MongoDB bağlantısı için
 const usersRoutes = require("./routes/users"); // Routes for users
 require("dotenv").config(); // Load environment variables
 
 const app = express();
 const PORT = 3000;
-mongoose
-  .connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => console.log("MongoDB bağlantısı başarılı"))
-  .catch((err) => console.log("MongoDB bağlantı hatası:", err));
 
 // Middleware setup
 app.use(cors()); // Enable CORS for cross-origin requests
