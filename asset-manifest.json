@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/deneme/static/css/main.06aa5b3a.css",
-    "main.js": "/deneme/static/js/main.687f5321.js",
-    "static/js/453.a7d57358.chunk.js": "/deneme/static/js/453.a7d57358.chunk.js",
-    "index.html": "/deneme/index.html",
-    "main.06aa5b3a.css.map": "/deneme/static/css/main.06aa5b3a.css.map",
-    "main.687f5321.js.map": "/deneme/static/js/main.687f5321.js.map",
-    "453.a7d57358.chunk.js.map": "/deneme/static/js/453.a7d57358.chunk.js.map"
+    "main.css": "/DENEME/static/css/main.06aa5b3a.css",
+    "main.js": "/DENEME/static/js/main.b177df7f.js",
+    "static/js/453.a7d57358.chunk.js": "/DENEME/static/js/453.a7d57358.chunk.js",
+    "index.html": "/DENEME/index.html",
+    "main.06aa5b3a.css.map": "/DENEME/static/css/main.06aa5b3a.css.map",
+    "main.b177df7f.js.map": "/DENEME/static/js/main.b177df7f.js.map",
+    "453.a7d57358.chunk.js.map": "/DENEME/static/js/453.a7d57358.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.06aa5b3a.css",
-    "static/js/main.687f5321.js"
+    "static/js/main.b177df7f.js"
   ]
 }
